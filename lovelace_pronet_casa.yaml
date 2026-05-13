@@ -1,0 +1,64 @@
+title: ProNet Casa
+views:
+  - title: Minha Casa
+    path: home
+    icon: mdi:home
+    type: sections
+    sections:
+      # --- Boas-vindas + Clima ---
+      - type: grid
+        cards:
+          - type: markdown
+            content: |
+              ## Bem-vindo ao ProNet Casa
+              Mais conforto para sua familia.
+          - type: weather-forecast
+            entity: weather.forecast_casa
+            show_forecast: false
+
+      # --- Comodos ---
+      - type: grid
+        title: Comodos
+        cards:
+          - type: area
+            area: sala_de_estar
+            show_camera: true
+          - type: area
+            area: cozinha
+            show_camera: true
+          - type: area
+            area: quarto
+            show_camera: true
+
+      # --- Controles Rapidos ---
+      - type: grid
+        title: Controles
+        cards:
+          - type: button
+            name: Luzes
+            icon: mdi:lightbulb-group
+            tap_action:
+              action: navigate
+              navigation_path: /light
+            icon_height: 40px
+          - type: button
+            name: Tomadas
+            icon: mdi:power-socket-br
+            tap_action:
+              action: navigate
+              navigation_path: /switch
+            icon_height: 40px
+          - type: button
+            name: Cameras
+            icon: mdi:cctv
+            tap_action:
+              action: navigate
+              navigation_path: /camera
+            icon_height: 40px
+          - type: button
+            name: Sensores
+            icon: mdi:motion-sensor
+            tap_action:
+              action: navigate
+              navigation_path: /sensor
+            icon_height: 40px

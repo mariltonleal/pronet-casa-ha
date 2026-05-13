@@ -1,0 +1,10 @@
+- id: pronet_casa_default_theme
+  alias: "Definir tema ProNet Casa ao iniciar"
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - action: frontend.set_theme
+      data:
+        name: pronet_casa
+        mode: light
