@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><title>ProNet Casa</title><meta charset="utf-8"><link rel="manifest" href="/manifest.json" crossorigin="use-credentials"><link rel="icon" href="/static/icons/favicon.ico"><link rel="modulepreload" href="/frontend_latest/authorize.ece4614dd01f84ff.js" crossorigin="use-credentials"><meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html {
+    background: linear-gradient(170deg, #003A70 0%, #0077FF 100%) !important;
+    color: #FFFFFF;
+    min-height: 100vh;
+  }
+  body {
+    font-family: 'Nunito Sans', sans-serif !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 32px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: transparent !important;
+  }
+  /* Esconder particulas/animacao */
+  #particles, canvas { display: none !important; }
+
+  .content {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: var(--safe-area-inset-top);
+  }
+  .header img {
+    height: 72px;
+    width: auto;
+    filter: none;
+  }
+  /* Card do formulario */
+  ha-authorize {
+    --primary-color: #0077FF !important;
+    --mdc-theme-primary: #0077FF !important;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0,58,112,0.2);
+    padding: 32px 24px 24px;
+    color: #003A70;
+  }
+  ha-authorize .card-content {
+    padding: 0;
+  }
+  /* Titulo "Bem-vindo a casa!" */
+  ha-authorize h1, ha-authorize .card-content > h1 {
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-weight: 800;
+    color: #003A70;
+    text-align: center;
+  }
+  /* Inputs */
+  ha-authorize ha-input {
+    --mdc-theme-primary: #0077FF !important;
+  }
+  /* Botao — forcar azul ProNet sobre o teal padrao */
+  ha-authorize .mdc-button--raised,
+  ha-authorize mwc-button[raised],
+  ha-authorize ha-button,
+  ha-authorize mwc-button {
+    --mdc-theme-primary: #0077FF !important;
+    --mdc-theme-on-primary: #FFFFFF !important;
+  }
+  .mdc-button--raised {
+    background-color: #0077FF !important;
+  }
+  /* Footer */
+  ha-authorize .footer {
+    text-align: center;
+    margin-top: 16px;
+  }
+  ha-authorize .footer a {
+    color: rgba(255,255,255,0.7) !important;
+  }
+  /* Links dentro do card */
+  ha-authorize a {
+    color: #0077FF !important;
+  }
+  /* Onda decorativa no rodape */
+  body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='rgba(255,255,255,0.06)' d='M0,60 C360,120 720,0 1080,60 C1260,90 1380,75 1440,60 L1440,120 L0,120 Z'/%3E%3Csvg%3E") center bottom / 100% 120px no-repeat;
+    pointer-events: none;
+    z-index: 0;
+  }
+  /* Tagline abaixo do logo */
+  .header::after {
+    content: "Mais conforto para sua familia.";
+    display: block;
+    position: absolute;
+    margin-top: 90px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.3px;
+  }
+  .header {
+    position: relative;
+  }
+</style>
+</head><body><div class="content"><div class="header"><img src="/local/pronet_casa_logo.png" alt="ProNet Casa"></div><ha-authorize></ha-authorize></div><script>function _ls(d,e){var i=document.createElement("script");return e&&(i.crossOrigin="use-credentials"),i.src=d,document.head.appendChild(i)}"attachShadow"in Element.prototype||(_ls("/static/polyfills/webcomponents-bundle.js",!0),_ls("/static/polyfills/lit-polyfill-support.js",!0));var isModern=/Edge?\/(13[7-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(139|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(18\.([5-9]|\d{2,})|(19|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(1{2}9|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(18[._]([5-9]|\d{2,})|(19|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[7-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(139|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[7-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/(29|[3-9]\d|\d{3,})\.\d+|Home As{2}istant\/[\d.]+ \(.+; macOS (1[3-9]|[2-9]\d|\d{3,})\.\d+(\.\d+)?\)/.test(navigator.userAgent)&&"findLast"in Array.prototype</script><script>if(-1===navigator.userAgent.indexOf("Android")){function _pf(o,t){var n=document.createElement("link");n.rel="preload",n.as="font",n.type="font/woff2",n.href=o,n.crossOrigin="anonymous",document.head.appendChild(n)}_pf("/static/fonts/roboto/Roboto-Regular.woff2"),_pf("/static/fonts/roboto/Roboto-Medium.woff2")}</script><script crossorigin="use-credentials">isModern&&(import("/frontend_latest/authorize.ece4614dd01f84ff.js"),window.latestJS=!0)</script><script>window.latestJS||_ls("/frontend_es5/authorize.7f51f4481b42dd89.js",!0)</script><script crossorigin="use-credentials">window.latestJS&&(window.providersPromise=fetch("/auth/providers",{credentials:"same-origin"}))</script><script>
+// Forcar cor azul ProNet e esconder particulas
+setInterval(function(){
+  // Esconder particulas
+  var p=document.getElementById("particles");if(p)p.style.display="none";
+  // Forcar variavel CSS em todos os niveis
+  var auth=document.querySelector("ha-authorize");
+  if(auth){
+    auth.style.setProperty("--primary-color","#0077FF","important");
+    auth.style.setProperty("--mdc-theme-primary","#0077FF","important");
+  }
+  // Forcar azul nos botoes (shadow DOM aberto)
+  document.querySelectorAll("ha-button, mwc-button").forEach(function(b){
+    b.style.setProperty("--mdc-theme-primary","#0077FF","important");
+    var sr=b.shadowRoot;if(!sr)return;
+    if(!sr.querySelector("#pn-btn")){
+      var s=document.createElement("style");s.id="pn-btn";
+      s.textContent="button{background-color:#0077FF!important}";
+      sr.appendChild(s);
+    }
+  });
+},200);
+</script></body></html>
